@@ -270,17 +270,17 @@
         }
         
         .banner-1 {
-            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('logo.jpg');
-            background-size: cover;
-        }
-        
-        .banner-2 {
             background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('fachada1.jpg');
             background-size: cover;
         }
         
-        .banner-3 {
+        .banner-2 {
             background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('fachada2.jpg');
+            background-size: cover;
+        }
+        
+        .banner-3 {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('logo.jpg');
             background-size: cover;
         }
         
@@ -2108,8 +2108,9 @@
                 <span></span>
             </div>
             <div class="logo" onclick="showPage('home')">
-    <img src="logo.jpg" alt="Logo" style="height: 45px; width: auto; object-fit: contain; margin-right: 10px;">
-    <span>MAXIALMACENEXE</span>
+                <i class="fas fa-store"></i>
+                <div>Maxialmacen<span>Exe</span></div>
+            </div>
         </div>
         <div class="search-bar">
             <input type="text" placeholder="¿Qué producto buscas?" id="searchInput">
@@ -2134,10 +2135,10 @@
     <div id="home-page" class="content-page page-active">
         <!-- Banner móvil con carrusel -->
         <div class="banner-container">
-            <div class="banner-slide banner-1 active" onclick="showProduct('vino-tinto')">
+            <div class="banner-slide banner-1 active" onclick="showProduct('aceite')">
                 <div class="banner-content">
-                    <h2>¡Oferta Especial en Vinos!</h2>
-                    <p>Hasta 30% de descuento en vinos seleccionados</p>
+                    <h2>¡Oferta especial Aceite Pureza!</h2>
+                    <p>Hasta 30% de descuento en aceites seleccionados</p>
                 </div>
             </div>
             <div class="banner-slide banner-2" onclick="showProduct('picada-premium')">
@@ -2171,56 +2172,56 @@
                 <div class="swiper-wrapper">
                     <!-- Slides -->
                     <div class="swiper-slide">
-                        <img src="yogurtdurazno.jpg" alt="Yogurt Durazno Tregar">
-                        <div class="product-info">
-                            <h3 class="product-title">Yogurt Durazno Tregar</h3>
-                            <div class="product-price">
-                                <span class="current-price">$1,800</span>
-                                <span class="original-price">$2,300</span>
-                            </div>
-                            <button class="add-to-cart" data-id="1" data-name="Yogurt Durazno Tregar" data-price="2300"><i class="fas fa-cart-plus"></i> Agregar</button>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="fiambre.png" alt="Tabla de picada Premium">
-                        <div class="product-info">
-                            <h3 class="product-title">Tabla de Picadas Premium</h3>
-                            <div class="product-price">
-                                <span class="current-price">$11,200</span>
-                            </div>
-                            <button class="add-to-cart" data-id="2" data-name="Tabla de Picadas Premium" data-price="11200"><i class="fas fa-cart-plus"></i> Agregar</button>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="aceite.jpg" alt="Aceite de Girasol Pureza">
+                        <img src="aceite.jpg" alt="aceite">
                         <div class="product-info">
                             <h3 class="product-title">Aceite de Girasol Pureza</h3>
                             <div class="product-price">
-                                <span class="current-price">$2,800</span>
-                                <span class="original-price">$3,500</span>
+                                <span class="current-price">$3,500</span>
+                                <span class="original-price">$4,300</span>
                             </div>
-                            <button class="add-to-cart" data-id="3" data-name="Aceite de Girasol Pureza" data-price="2800"><i class="fas fa-cart-plus"></i> Agregar</button>
+                            <button class="add-to-cart" data-id="1" data-name="Aceite de Girasol Pureza" data-price="3500"><i class="fas fa-cart-plus"></i> Agregar</button>
                         </div>
                     </div>
                     <div class="swiper-slide">
-                        <img src="quesocremoso.jpg" alt="Queso cremoso">
+                        <img src="fiambre.jpg">
                         <div class="product-info">
-                            <h3 class="product-title">Queso Cremoso</h3>
+                            <h3 class="product-title">Tabla de Picadas Premium</h3>
+                            <div class="product-price">
+                                <span class="current-price">$6,200</span>
+                            </div>
+                            <button class="add-to-cart" data-id="2" data-name="Tabla de Picadas Premium" data-price="6200"><i class="fas fa-cart-plus"></i> Agregar</button>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="yogurtvainilla.jpg">
+                        <div class="product-info">
+                            <h3 class="product-title">Yogurt Vainilla Tregar</h3>
+                            <div class="product-price">
+                                <span class="current-price">$1,800</span>
+                                <span class="original-price">$2,500</span>
+                            </div>
+                            <button class="add-to-cart" data-id="3" data-name="yogur vainilla tregar" data-price="1800"><i class="fas fa-cart-plus"></i> Agregar</button>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="quesocremoso.jpg" alt="Queso Cremoso Punta Agua">
+                        <div class="product-info">
+                            <h3 class="product-title">Queso Cremoso Punta Agua</h3>
                             <div class="product-price">
                                 <span class="current-price">$7,000</span>
                             </div>
-                            <button class="add-to-cart" data-id="4" data-name="Queso cremoso" data-price="7000"><i class="fas fa-cart-plus"></i> Agregar</button>
+                            <button class="add-to-cart" data-id="4" data-name="Queso Cremoso Punta Agua" data-price="2500"><i class="fas fa-cart-plus"></i> Agregar</button>
                         </div>
                     </div>
                     <div class="swiper-slide">
-                        <img src="alfajores.jpg" alt="alajores">
+                        <img src="maplehuevos.jpg" alt="Maple Huevo">
                         <div class="product-info">
-                            <h3 class="product-title">Alfajores Deliciosos</h3>
+                            <h3 class="product-title">Maple de Huevo</h3>
                             <div class="product-price">
-                                <span class="current-price">$1,800</span>
-                                <span class="original-price">$2,200</span>
+                                <span class="current-price">$6,000</span>
+                                <span class="original-price">$8,200</span>
                             </div>
-                            <button class="add-to-cart" data-id="5" data-name="Alfajores Deliciosos" data-price="1800"><i class="fas fa-cart-plus"></i> Agregar</button>
+                            <button class="add-to-cart" data-id="5" data-name="Maple de Huevo" data-price="6000"><i class="fas fa-cart-plus"></i> Agregar</button>
                         </div>
                     </div>
                 </div>
@@ -2264,22 +2265,22 @@
                 <div class="products-grid" id="productsGrid">
                     <!-- Productos aquí -->
                     <!-- Producto 1 con descuento -->
-                    <div class="product-card" data-price="4500" data-name="Vino Tinto Reserva" data-discount="15" id="vino-tinto">
+                    <div class="product-card" data-price="2500" data-name="Aceite de Girasol Pureza" data-discount="15" id="vino-tinto">
                         <div class="discount-badge">15% OFF</div>
-                        <img src="arrozgallo1.jpg" alt="Arroz Gallo" class="product-image">
+                        <img src="aceite.jpg" alt="Aceite de Girasol Pureza" class="product-image">
                         <div class="product-info">
-                            <h3 class="product-title">Arroz Gallo</h3>
+                            <h3 class="product-title">Aceite de Girasol Pureza</h3>
                             <div class="product-price">
-                                <span class="current-price">$1,500</span>
-                                <span class="original-price">$2,300</span>
+                                <span class="current-price">$4,500</span>
+                                <span class="original-price">$5,300</span>
                             </div>
-                            <button class="add-to-cart" data-id="1" data-name="Arroz Gallo" data-price="1500"><i class="fas fa-cart-plus"></i> Agregar</button>
+                            <button class="add-to-cart" data-id="1" data-name="Aceite de Girasol Pureza" data-price="4500"><i class="fas fa-cart-plus"></i> Agregar</button>
                         </div>
                     </div>
                     
                     <!-- Producto 2 -->
                     <div class="product-card" data-price="6200" data-name="Tabla de Picadas Premium" id="picada-premium">
-                        <img src="fiambre.jpg" alt="Tabla de Picadas Premium" class="product-image">
+                        <img src="https://images.unsplash.com/photo-1610878180933-123728745d22?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=80" alt="Tabla de Picadas Premium" class="product-image">
                         <div class="product-info">
                             <h3 class="product-title">Tabla de Picadas Premium</h3>
                             <div class="product-price">
@@ -2349,14 +2350,14 @@
                 
                 <!-- Carrusel de ofertas -->
                 <div class="offers-carousel">
-                    <div class="offers-slide active" onclick="showProduct('vino-tinto')">
-                        <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80" alt="Oferta 1" class="offer-image">
+                    <div class="offers-slide active" onclick="showProduct('aceite')">
+                        <img src="aceite.jpg" alt="Oferta 1" class="offer-image">
                     </div>
                     <div class="offers-slide" onclick="showProduct('picada-premium')">
-                        <img src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80" alt="Oferta 2" class="offer-image">
+                        <img src="fiambre.jpg" alt="Oferta 2" class="offer-image">
                     </div>
                     <div class="offers-slide" onclick="showProduct('desayuno-premium')">
-                        <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80" alt="Oferta 3" class="offer-image">
+                        <img src="alfajores.jpg" alt="Oferta 3" class="offer-image">
                     </div>
                     <div class="offer-indicators">
                         <div class="offer-indicator active" data-offer="0"></div>
@@ -2368,16 +2369,16 @@
                 <!-- Productos en oferta -->
                 <div class="products-grid" id="offersProductsGrid">
                     <!-- Productos con descuento -->
-                    <div class="product-card" data-price="4500" data-name="Manaos Cola" data-discount="15" id="vino-tinto">
+                    <div class="product-card" data-price="4500" data-name="Aceite de Girasol Pureza" data-discount="15" id="vino-tinto">
                         <div class="discount-badge">15% OFF</div>
-                        <img src="manaoscola.jpg" alt="Manaos Cola" class="product-image">
+                        <img src="aceite.jpg" alt="Aceite de Girasol Pureza" class="product-image">
                         <div class="product-info">
-                            <h3 class="product-title">Manaos Cola</h3>
+                            <h3 class="product-title">Aceite de Girasol Pureza</h3>
                             <div class="product-price">
-                                <span class="current-price">$1,500</span>
-                                <span class="original-price">$2,300</span>
+                                <span class="current-price">$4,500</span>
+                                <span class="original-price">$5,300</span>
                             </div>
-                            <button class="add-to-cart" data-id="1" data-name="Manaos Cola" data-price="1500"><i class="fas fa-cart-plus"></i> Agregar</button>
+                            <button class="add-to-cart" data-id="1" data-name="Aceite de Girasol Pureza" data-price="4500"><i class="fas fa-cart-plus"></i> Agregar</button>
                         </div>
                     </div>
                     
@@ -2425,7 +2426,7 @@
         <div class="about-banner">
             <div class="about-banner-content">
                 <div class="about-banner-logo">
-                    <i class="fas fa-store"></i> MaxialmacenExe
+                    <i class="fas fa-store"></i> La Esquina
                 </div>
                 <h2>Nuestro Equipo</h2>
             </div>
@@ -2435,7 +2436,7 @@
             <div class="about-content">
                 <h2 class="section-title"><i class="fas fa-users"></i> Nuestro Equipo</h2>
                 <div class="about-text">
-                    <p>En <strong>MaxialmacenExe</strong> somos un almacén de barrio atendido por sus dueños y un equipo de chicas y chicos con la mejor onda y amabilidad. Nos encanta servir a nuestra comunidad y ofrecer productos de calidad con una sonrisa.</p>
+                    <p>En <strong>La Esquina</strong> somos un almacén de barrio atendido por sus dueños y un equipo de chicas y chicos con la mejor onda y amabilidad. Nos encanta servir a nuestra comunidad y ofrecer productos de calidad con una sonrisa.</p>
                     <p>Nuestro equipo está compuesto por personas apasionadas por la atención al cliente, siempre dispuestas a ayudarte y asesorarte para que encuentres exactamente lo que necesitas. Creemos en el trato personalizado y en crear una experiencia de compra agradable para todos nuestros clientes.</p>
                     <p>¡Vení a conocernos y descubrí por qué somos el almacén preferido del barrio!</p>
                 </div>
@@ -2452,21 +2453,15 @@
                         <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=80" alt="Lucía" class="team-photo">
                         <h3 class="team-name">Mika</h3>
                         <p class="team-role">Cajera</p>
-                        <p class="team-desc">Siempre alegre y dispuesta a ayudar, Lucía conoce a todos los clientes por su nombre.</p>
+                        <p class="team-desc">Siempre alegre y dispuesta a ayudar, Mika conoce a todos los clientes por su nombre.</p>
                     </div>
-                    
-                    <div class="team-member">
-                        <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=80" alt="Juan" class="team-photo">
-                        <h3 class="team-name">Milon</h3>
-                        <p class="team-role">Repositor</p>
-                        <p class="team-desc">Milton siempre se asegura de que tengamos los productos frescos y bien organizados.</p>
-                    </div>
+                                    
                     
                     <div class="team-member">
                         <img src="https://images.unsplash.com/photo-1519345182560-3f2917c472ef?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=80" alt="Carlos" class="team-photo">
-                        <h3 class="team-name">Jaquelin</h3>
+                        <h3 class="team-name">Milton</h3>
                         <p class="team-role">Atención al cliente</p>
-                        <p class="team-desc">Jaquelin es nuestro experto en vinos y siempre tiene una recomendación perfecta.</p>
+                        <p class="team-desc">Milton es nuestro experto en vinos y siempre tiene una recomendación perfecta.</p>
                     </div>
                 </div>
             </div>
@@ -2505,27 +2500,27 @@
                 </div>
                 
                 <div class="products-grid" id="conservasProductsGrid">
-                    <div class="product-card" data-price="1200" data-name="Poroto" data-discount="10">
+                    <div class="product-card" data-price="1200" data-name="Arroz Gallo" data-discount="10">
                         <div class="discount-badge">10% OFF</div>
-                        <img src="poroto.jpg" alt="Poroto" class="product-image">
+                        <img src="arrozgallo.jpg" alt="Arroz Gallo" class="product-image">
                         <div class="product-info">
-                            <h3 class="product-title">Poroto (170g)</h3>
+                            <h3 class="product-title">Arroz Gallo (170g)</h3>
                             <div class="product-price">
                                 <span class="current-price">$1,200</span>
                                 <span class="original-price">$1,350</span>
                             </div>
-                            <button class="add-to-cart" data-id="20" data-name="Poroto" data-price="1200"><i class="fas fa-cart-plus"></i> Agregar</button>
+                            <button class="add-to-cart" data-id="20" data-name="Arroz Gallo" data-price="1200"><i class="fas fa-cart-plus"></i> Agregar</button>
                         </div>
                     </div>
                     
-                    <div class="product-card" data-price="1550" data-name="Maíz en Lata">
-                        <img src="yerbas.jpg" alt="Yerba" class="product-image">
+                    <div class="product-card" data-price="950" data-name="Poroto ">
+                        <img src="poroto.jpg" alt="Poroto " class="product-image">
                         <div class="product-info">
-                            <h3 class="product-title">Yerba (500g)</h3>
+                            <h3 class="product-title">Poroto  (340g)</h3>
                             <div class="product-price">
-                                <span class="current-price">$1550</span>
+                                <span class="current-price">$950</span>
                             </div>
-                            <button class="add-to-cart" data-id="21" data-name="Yerba" data-price="1550"><i class="fas fa-cart-plus"></i> Agregar</button>
+                            <button class="add-to-cart" data-id="21" data-name="Poroto " data-price="950"><i class="fas fa-cart-plus"></i> Agregar</button>
                         </div>
                     </div>
                     
@@ -2535,21 +2530,21 @@
         </div>
     </div>
 
-    <!-- Página de producto individual (ejemplo para Atún) -->
-    <div id="producto-atun-page" class="content-page">
+    <!-- Página de producto individual (ejemplo para Arroz) -->
+    <div id="producto-arroz-page" class="content-page">
         <div class="main-container">
             <div class="product-detail">
                 <div class="product-gallery">
-                    <img src="https://images.unsplash.com/photo-1589923188656-50c30dd0e9ba?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80" alt="Atún en Lata" class="product-main-image" id="mainProductImage">
+                    <img src="arrozgallo.jpg" alt="Arroz Gallo" class="product-main-image" id="mainProductImage">
                     <div class="product-thumbnails">
-                        <img src="https://images.unsplash.com/photo-1589923188656-50c30dd0e9ba?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80" alt="Atún" class="product-thumbnail active" onclick="changeProductImage(this)">
-                        <img src="https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80" alt="Atún abierto" class="product-thumbnail" onclick="changeProductImage(this)">
+                        <img src="arrozgallo1.jpg" alt="Arroz Gallo" class="product-thumbnail active" onclick="changeProductImage(this)">
+                        <img src="arrozgallo.jpg" alt="Arroz Gallo abierto" class="product-thumbnail" onclick="changeProductImage(this)">
                     </div>
                 </div>
                 
                 <div class="product-info-detail">
-                    <p class="product-category">Conservas > Atún</p>
-                    <h1 class="product-title-detail">Atún en Lata al Natural (170g)</h1>
+                    <p class="product-category">Conservas > Arroz</p>
+                    <h1 class="product-title-detail">Arroz Gallo al Natural (170g)</h1>
                     
                     <div class="product-price-detail">
                         <span class="current-price-detail">$1,200</span>
@@ -2557,7 +2552,7 @@
                     </div>
                     
                     <p class="product-description">
-                        Atún de alta calidad en conserva al natural. Ideal para ensaladas, sándwiches y platos variados. 
+                        Arroz Gallo de alta calidad en conserva al natural. Ideal para ensaladas, sándwiches y platos variados. 
                         Producto rico en proteínas y omega-3. Sin conservantes artificiales.
                     </p>
                     
@@ -2575,7 +2570,7 @@
                     <div class="product-features">
                         <h3>Características del producto</h3>
                         <ul>
-                            <li><i class="fas fa-check"></i> Atún de alta calidad</li>
+                            <li><i class="fas fa-check"></i> Arroz Gallo de alta calidad</li>
                             <li><i class="fas fa-check"></i> En conserva al natural</li>
                             <li><i class="fas fa-check"></i> Rico en proteínas y omega-3</li>
                             <li><i class="fas fa-check"></i> Sin conservantes artificiales</li>
@@ -2669,7 +2664,7 @@
                 <div class="footer-section">
                     <h3>Horario de atención</h3>
                     <p>Lunes a Sabados: 8:00 - 23:00</p>
-                    <p>Domingos: 9:00 - 13:00</p>
+                    <p>Domingos: 9:00 - 22:00</p>
                 </div>
                 
                 <div class="footer-section">
@@ -2927,37 +2922,26 @@
         function addProductToCart() {
             const quantity = parseInt(document.getElementById('productQuantity').textContent);
             // Aquí agregarías el producto al carrito con la cantidad seleccionada
-            alert(`Agregado ${quantity} unidad(es) de Atún en Lata al carrito`);
+            alert(`Agregado ${quantity} unidad(es) de Arroz Gallo al carrito`);
             // Lógica real de agregar al carrito iría aquí
         }
         
-       function searchProducts(query) {
-    const searchTerm = query.toLowerCase().trim();
-    const allProducts = document.querySelectorAll('.product-card'); // Captura todos los productos
-    const sectionTitle = document.querySelector('.section-title');
+        // Función para buscar productos
+        function searchProducts() {
+    const input = document.getElementById('search-input');
+    const filter = input.value.toLowerCase();
+    const products = document.querySelectorAll('.product-card');
 
-    // Cambiamos el título para avisar que estamos buscando
-    if (sectionTitle) sectionTitle.innerText = `Resultados para: "${query}"`;
-
-    allProducts.forEach(product => {
-        // Busca dentro del título del producto
-        const productName = product.querySelector('.product-title').innerText.toLowerCase();
-        
-        if (productName.includes(searchTerm)) {
-            product.style.display = 'flex'; // Muestra si coincide
-            product.parentElement.style.display = 'grid'; // Asegura que la grilla sea visible
+    products.forEach(product => {
+        const title = product.querySelector('h4').innerText.toLowerCase();
+        // Si el nombre del producto tiene lo que escribiste, se queda. Si no, se va.
+        if (title.includes(filter)) {
+            product.style.display = "";
         } else {
-            product.style.display = 'none'; // Oculta si no coincide
+            product.style.display = "none";
         }
     });
-
-    // Si el buscador está vacío, volvemos a mostrar todo normal
-    if (searchTerm === "") {
-        if (sectionTitle) sectionTitle.innerText = "TODOS LOS PRODUCTOS";
-        allProducts.forEach(p => p.style.display = 'flex');
-    }
-
-        
+}
         // Funciones para el menú de categorías móvil
         function toggleMobileCategories() {
             document.getElementById('mobileCategories').classList.toggle('active');
@@ -3590,5 +3574,4 @@
         });
     </script>
 </body>      
-
 </html>
