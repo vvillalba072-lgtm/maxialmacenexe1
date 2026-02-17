@@ -2926,22 +2926,44 @@
             // Lógica real de agregar al carrito iría aquí
         }
         
+        
         // Función para buscar productos
         function searchProducts() {
-    const input = document.getElementById('search-input');
-    const filter = input.value.toLowerCase();
-    const products = document.querySelectorAll('.product-card');
-
-    products.forEach(product => {
-        const title = product.querySelector('h4').innerText.toLowerCase();
-        // Si el nombre del producto tiene lo que escribiste, se queda. Si no, se va.
-        if (title.includes(filter)) {
-            product.style.display = "";
-        } else {
-            product.style.display = "none";
+            const searchTerm = document.getElementById('searchInput').value.toLowerCase().trim();
+            
+            if (searchTerm === '') {
+                alert('Por favor, ingresa un término de búsqueda');
+                return;
+            }
+            
+            const productCards = document.querySelectorAll('.product-card');
+            let found = false;
+            
+            productCards.forEach(card => {
+                const productName = card.getAttribute('data-name').toLowerCase();
+                if (productName.includes(searchTerm)) {
+                    card.style.display = 'block';
+                    found = true;
+                    // Scroll to the product
+                    card.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    // Highlight effect
+                    card.style.boxShadow = '0 0 15px rgba(139, 0, 0, 0.5)';
+                    setTimeout(() => {
+                        card.style.boxShadow = '0 5px 15px rgba(0,0,0,0.1)';
+                    }, 2000);
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+            
+            if (!found) {
+                alert('No se encontraron productos que coincidan con tu búsqueda');
+                // Show all products again
+                productCards.forEach(card => {
+                    card.style.display = 'block';
+                });
+            }
         }
-    });
-}
         // Funciones para el menú de categorías móvil
         function toggleMobileCategories() {
             document.getElementById('mobileCategories').classList.toggle('active');
@@ -3576,3 +3598,4 @@
 </body>      
 
 </html>
+
